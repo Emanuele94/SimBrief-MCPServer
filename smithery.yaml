@@ -1,0 +1,19 @@
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      pilotId:
+        type: string
+        description: >-
+          Your SimBrief Pilot ID. Find it under SimBrief → Account Settings → Pilot ID.
+    required:
+      - pilotId
+  commandFunction: |-
+    (config) => ({
+      command: "uv",
+      args: ["run", "python", "server.py"],
+      env: {
+        SIMBRIEF_PILOT_ID: config.pilotId
+      }
+    })
