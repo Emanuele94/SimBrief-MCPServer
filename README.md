@@ -41,11 +41,9 @@ uv sync
 
 ## Configuration
 
-Open `server.py` and set your SimBrief Pilot ID (found under SimBrief → Account Settings → **Pilot ID**):
+Your SimBrief **Pilot ID** is passed via an environment variable in the MCP config — no code changes needed.
 
-```python
-PILOT_ID = "your_pilot_id_here"
-```
+Find your Pilot ID under SimBrief → Account Settings → **Pilot ID**.
 
 ## Claude Desktop integration
 
@@ -64,13 +62,18 @@ Add the following to your `claude_desktop_config.json`:
         "--project", "/absolute/path/to/SimBrief-MCPServer",
         "python",
         "/absolute/path/to/SimBrief-MCPServer/server.py"
-      ]
+      ],
+      "env": {
+        "SIMBRIEF_PILOT_ID": "your_pilot_id_here"
+      }
     }
   }
 }
 ```
 
 Then restart Claude Desktop. The SimBrief tools will appear automatically.
+
+> The server will refuse to start with a clear error message if `SIMBRIEF_PILOT_ID` is not set.
 
 ## Usage examples
 

@@ -2,6 +2,7 @@
 """SimBrief MCP Server — access your SimBrief flight plans from Claude."""
 
 import json
+import os
 from datetime import UTC, datetime
 
 import httpx
@@ -9,7 +10,13 @@ from mcp.server.fastmcp import FastMCP
 
 mcp = FastMCP("SimBrief Flight Planning")
 
-PILOT_ID = "1211629"
+PILOT_ID = os.environ.get("SIMBRIEF_PILOT_ID", "")
+if not PILOT_ID:
+    raise RuntimeError(
+        "SIMBRIEF_PILOT_ID environment variable is not set. "
+        "Add it to your Claude Desktop MCP config under 'env'."
+    )
+
 SIMBRIEF_API = "https://www.simbrief.com/api/xml.fetcher.php"
 
 
