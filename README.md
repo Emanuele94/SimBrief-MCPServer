@@ -119,6 +119,10 @@ All tests run fully offline — the SimBrief API is mocked so no internet connec
 
 PRs must pass all checks (tests + lint) before they can be merged.
 
+## Glama
+[![SimBrief-MCPServer MCP server](https://glama.ai/mcp/servers/Emanuele94/SimBrief-MCPServer/badges/card.svg)](https://glama.ai/mcp/servers/Emanuele94/SimBrief-MCPServer)
+[![SimBrief-MCPServer MCP server](https://glama.ai/mcp/servers/Emanuele94/SimBrief-MCPServer/badges/score.svg)](https://glama.ai/mcp/servers/Emanuele94/SimBrief-MCPServer)
+
 ## License
 
 MIT
