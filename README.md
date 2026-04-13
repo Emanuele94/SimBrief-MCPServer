@@ -2,6 +2,9 @@
 
 A [Model Context Protocol](https://modelcontextprotocol.io) server that gives Claude Desktop direct access to your SimBrief flight plans — no Cloudflare, no OAuth, no infrastructure required.
 
+[![SimBrief-MCPServer MCP server](https://glama.ai/mcp/servers/Emanuele94/SimBrief-MCPServer/badges/card.svg)](https://glama.ai/mcp/servers/Emanuele94/SimBrief-MCPServer)
+
+[![SimBrief-MCPServer MCP server](https://glama.ai/mcp/servers/Emanuele94/SimBrief-MCPServer/badges/score.svg)](https://glama.ai/mcp/servers/Emanuele94/SimBrief-MCPServer)
 ## Features
 
 14 tools covering every section of a SimBrief OFP:
@@ -118,10 +121,6 @@ All tests run fully offline — the SimBrief API is mocked so no internet connec
 5. Open a Pull Request against `main`
 
 PRs must pass all checks (tests + lint) before they can be merged.
-
-## Glama
-[![SimBrief-MCPServer MCP server](https://glama.ai/mcp/servers/Emanuele94/SimBrief-MCPServer/badges/card.svg)](https://glama.ai/mcp/servers/Emanuele94/SimBrief-MCPServer)
-[![SimBrief-MCPServer MCP server](https://glama.ai/mcp/servers/Emanuele94/SimBrief-MCPServer/badges/score.svg)](https://glama.ai/mcp/servers/Emanuele94/SimBrief-MCPServer)
 
 ## License
 
